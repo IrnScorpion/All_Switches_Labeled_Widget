@@ -6,6 +6,43 @@ This widget displays the status of your switches using custom labels pulled from
 
 ---
 
+![Widget Preview](images/Screen_Ex1.bmp)
+
+---
+🚀 **Key Features**
+
+🙈 **Intelligent Auto-Hide**
+
+Keep your screen clean and clutter-free for simple models.
+
+Dynamic Display: If a switch (like SD) has no label defined in your labels/*.lua file, the widget can automatically hide that box entirely.
+
+Toggleable: You can turn this on or off in the Widget Settings menu on your radio.
+
+🚦 **Active Position Highlighting**
+
+Never guess which mode you are in.
+
+The widget monitors the PWM value of each switch:
+
+u (Up): -1024
+
+m (Mid): 0
+
+d (Down): +1024
+
+The label for the current physical position will automatically change color to your Active Text Color (defaulting to your theme's focus color).
+
+🛠️ **Configurable Refresh Rate**
+
+Adjust how often the widget checks for switch movements (50ms to 1000ms).
+
+Faster rates give you "instant" visual feedback, while slower rates save CPU cycles for complex flight controllers or telemetry scripts.
+
+
+---
+
+
 ### **📂 Folder Structure**
 To function correctly, the files must be placed on your SD card exactly as follows:
 * `SD Card/WIDGETS/All_Switches/main.lua`
